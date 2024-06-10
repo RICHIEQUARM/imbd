@@ -32,13 +32,11 @@ export default async function Moviepage({ params }) {
 
             {movie.release_date || movie.first_air_date}
           </p>
-          <div className="flex items-center">
-            <p className="mb-3">
+          <div className=" flex content-center ">
+            <p className="mb-3 flex">
               <span className="font-semibold mr-1">Ratings:</span>
               {movie.vote_count}
-            </p>
-            <p className="pl-2 cursor-pointer">
-              <BsFillHandThumbsUpFill />
+              <BsFillHandThumbsUpFill className="h-5 mr-1 ml-3 cursor-pointer" />
             </p>
           </div>
         </div>
