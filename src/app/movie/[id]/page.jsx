@@ -1,3 +1,4 @@
+import Trailer from "@/components/Trailer";
 import Image from "next/image";
 import { BsFillHandThumbsUpFill } from "react-icons/bs";
 
@@ -22,6 +23,7 @@ export default async function Moviepage({ params }) {
           className="rounded-lg"
           style={{ maxWidth: "100%", height: "100%" }}
         ></Image>
+
         <div className="p-4">
           <h2 className="pb-5 text-lg font-bold ">
             {movie.title || movie.name}
@@ -39,6 +41,7 @@ export default async function Moviepage({ params }) {
               <BsFillHandThumbsUpFill className="h-5 mr-1 ml-3 cursor-pointer" />
             </p>
           </div>
+          <Trailer movieId={movie.id} />
         </div>
       </div>
     </div>
